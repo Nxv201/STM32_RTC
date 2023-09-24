@@ -142,7 +142,7 @@ int main(void)
 	lcd_init();
 	if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) != 0x32F2)
 		set_time();
-	set_time();
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
