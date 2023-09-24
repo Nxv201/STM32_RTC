@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stm32_rtc\startup_stm32f103xb.o"
+"stm32_rtc\main.o"
+"stm32_rtc\stm32f1xx_it.o"
+"stm32_rtc\stm32f1xx_hal_msp.o"
+"stm32_rtc\i2c-lcd.o"
+"stm32_rtc\stm32f1xx_hal_gpio_ex.o"
+"stm32_rtc\stm32f1xx_hal_i2c.o"
+"stm32_rtc\stm32f1xx_hal.o"
+"stm32_rtc\stm32f1xx_hal_rcc.o"
+"stm32_rtc\stm32f1xx_hal_rcc_ex.o"
+"stm32_rtc\stm32f1xx_hal_gpio.o"
+"stm32_rtc\stm32f1xx_hal_dma.o"
+"stm32_rtc\stm32f1xx_hal_cortex.o"
+"stm32_rtc\stm32f1xx_hal_pwr.o"
+"stm32_rtc\stm32f1xx_hal_flash.o"
+"stm32_rtc\stm32f1xx_hal_flash_ex.o"
+"stm32_rtc\stm32f1xx_hal_exti.o"
+"stm32_rtc\stm32f1xx_hal_rtc.o"
+"stm32_rtc\stm32f1xx_hal_rtc_ex.o"
+"stm32_rtc\stm32f1xx_hal_tim.o"
+"stm32_rtc\stm32f1xx_hal_tim_ex.o"
+"stm32_rtc\system_stm32f1xx.o"
+--strict --scatter "STM32_RTC\STM32_RTC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32_RTC.map" -o STM32_RTC\STM32_RTC.axf
